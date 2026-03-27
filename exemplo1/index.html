@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Único Arquivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #ef0707;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 15px;
+      margin-left: 10px;
+      font-size: 16px;
+      background-color: #fa030c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Revisão de HTML, CSS e JavaScript</h1>
+  <h2>Digite um valor</h2>
+
+  <input type="text" id="textoa" placeholder="Digite algo...">
+  <input type="text" id="textob" placeholder="Digite algo...">
+  <button onclick="mostrarMensagem()">Mostrar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function mostrarMensagem() {
+      let valor = document.getElementById("textob").value;
+      if (valor.trim() === "") {
+        alert("Por favor, digite algo!");
+      } else {
+        document.getElementById("resultado").innerText = valor;
+      }
+    }
+  </script>
+
+</body>
+
+</html>

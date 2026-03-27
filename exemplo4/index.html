@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos de Arrow Functions</title>
+</head>
+<body>
+    <h1>Arrow Functions em JavaScript</h1>
+    <button onclick="mensagem()">Nenhum parâmetro</button>
+    <button onclick="saudacao('Nisston')">Um parâmetro</button>
+    <button onclick="alert('Soma: ' + soma(5, 3))">Dois parâmetros</button>
+    <button onclick="alert('Média: ' + calcularMedia(7, 8, 9))">Mais parâmetros</button>
+    <button onclick="alert('Dobro: ' + dobro(10))">Retorno implícito</button>
+
+    <script>
+        // 1. Nenhum parâmetro
+        const mensagem = () => {
+            alert("Olá, mundo!");
+        };
+
+        // 2. Um parâmetro
+        const saudacao = nome => {
+            alert(`Olá, ${nome}!`);
+        };
+
+        // 3. Dois parâmetros
+        const soma = (a, b) => {
+            return a + b;
+        };
+
+        // 4. Mais parâmetros
+        const calcularMedia = (n1, n2, n3) => {
+            return (n1 + n2 + n3) / 3;
+        };
+
+        // 5. Retorno implícito
+        const dobro = x => x * 2;
+    </script>
+</body>
+</html>
